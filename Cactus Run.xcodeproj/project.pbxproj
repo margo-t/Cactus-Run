@@ -18,6 +18,8 @@
 		8D061BCE20065EBE006DD713 /* Level_0-1.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8D061BCD20065EBE006DD713 /* Level_0-1.sks */; };
 		8D061BD120065FC6006DD713 /* TileSets.sks in Resources */ = {isa = PBXBuildFile; fileRef = 8D061BD020065FC6006DD713 /* TileSets.sks */; };
 		8D061BD420067025006DD713 /* SKNodeExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D061BD320067025006DD713 /* SKNodeExtentions.swift */; };
+		8D8ACF12202F81D6006CBBEB /* RepeatingLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8ACF11202F81D6006CBBEB /* RepeatingLayer.swift */; };
+		8D8ACF14202F879F006CBBEB /* GameConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8ACF13202F879F006CBBEB /* GameConstants.swift */; };
 		8DBF955C2007DDC000DFAB14 /* Layer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBF955B2007DDC000DFAB14 /* Layer.swift */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +58,8 @@
 		8D061BCD20065EBE006DD713 /* Level_0-1.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = "Level_0-1.sks"; sourceTree = "<group>"; };
 		8D061BD020065FC6006DD713 /* TileSets.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = TileSets.sks; sourceTree = "<group>"; };
 		8D061BD320067025006DD713 /* SKNodeExtentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKNodeExtentions.swift; sourceTree = "<group>"; };
+		8D8ACF11202F81D6006CBBEB /* RepeatingLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatingLayer.swift; sourceTree = "<group>"; };
+		8D8ACF13202F879F006CBBEB /* GameConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameConstants.swift; sourceTree = "<group>"; };
 		8DBF955B2007DDC000DFAB14 /* Layer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -143,6 +147,7 @@
 			children = (
 				8D061B942002E3C7006DD713 /* AppDelegate.swift */,
 				8D061B9C2002E3C7006DD713 /* GameViewController.swift */,
+				8D8ACF13202F879F006CBBEB /* GameConstants.swift */,
 			);
 			path = Template;
 			sourceTree = "<group>";
@@ -200,6 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				8DBF955B2007DDC000DFAB14 /* Layer.swift */,
+				8D8ACF11202F81D6006CBBEB /* RepeatingLayer.swift */,
 			);
 			path = Layers;
 			sourceTree = "<group>";
@@ -344,7 +350,9 @@
 				8D061B9D2002E3C7006DD713 /* GameViewController.swift in Sources */,
 				8DBF955C2007DDC000DFAB14 /* Layer.swift in Sources */,
 				8D061BD420067025006DD713 /* SKNodeExtentions.swift in Sources */,
+				8D8ACF14202F879F006CBBEB /* GameConstants.swift in Sources */,
 				8D061B952002E3C7006DD713 /* AppDelegate.swift in Sources */,
+				8D8ACF12202F81D6006CBBEB /* RepeatingLayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
