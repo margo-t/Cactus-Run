@@ -21,13 +21,12 @@ class GameScene: SKScene {
     
     var lastTime: TimeInterval = 0
     var dt: TimeInterval = 0
-
+    
     var gameState = GameState.ready
     
     var player: Player!
     
     override func didMove(to view: SKView) {
-        
         physicsWorld.contactDelegate = self
         physicsWorld.gravity = CGVector(dx: 0.0, dy: -6.0)
         
@@ -44,7 +43,7 @@ class GameScene: SKScene {
         backgroundLayer.zPosition = GameConstants.ZPositions.farBGZ
         addChild(backgroundLayer)
         
-        for i in 0...1{
+        for i in 0...1 {
             let backgroundImage = SKSpriteNode(imageNamed: GameConstants.StringConstants.worldBackgroundNames[0])
             backgroundImage.name = String(i)
             backgroundImage.scale(to: frame.size, width: false, multiplier: 1.0)
@@ -67,10 +66,13 @@ class GameScene: SKScene {
     }
     
     func loadTileMap() {
-        if let groundTiles = mapNode.childNode(withName: GameConstants.StringConstants.groundTilesName) as? SKTileMapNode {
+        if let groundTiles = mapNode.childNode(withName: GameConstants.StringConstants.groundTilesName)
+            as? SKTileMapNode {
             tileMap = groundTiles
             tileMap.scale(to: frame.size, width: false, multiplier: 1.0)
+            PhysicsHelper.addPhysicsBody(to: tileMap, and: "ground")
         }
+        
         addPlayer()
     }
     
@@ -112,9 +114,22 @@ class GameScene: SKScene {
         if gameState == .ongoing {
             worldLayer.update(dt)
             backgroundLayer.update(dt)
-            
         }
     }
+    
+    override func didSimulatePhysics() {
+
+        for node in tileMap[GameConstants.StringConstants.groundNodeName] {
+            if let groundNode = node as? GroundNode {
+                let groundY = (groundNode.position.y + groundNode.size.height) * tileMap.yScale
+                let playerY = player.position.y - player.size.height/3
+                groundNode.isBodyActivated = playerY > groundY
+            }
+        }
+    }
+    
+    
+    
     
 }
 

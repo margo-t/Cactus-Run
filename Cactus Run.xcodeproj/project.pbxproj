@@ -22,6 +22,7 @@
 		8D8ACF14202F879F006CBBEB /* GameConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8ACF13202F879F006CBBEB /* GameConstants.swift */; };
 		8D8ACF17202F8CDB006CBBEB /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8ACF16202F8CDB006CBBEB /* Player.swift */; };
 		8D8ACF1A202F9556006CBBEB /* PhysicsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8ACF19202F9556006CBBEB /* PhysicsHelper.swift */; };
+		8D8ACF2820309E36006CBBEB /* GroundNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8ACF2720309E36006CBBEB /* GroundNode.swift */; };
 		8DBF955C2007DDC000DFAB14 /* Layer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBF955B2007DDC000DFAB14 /* Layer.swift */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +65,7 @@
 		8D8ACF13202F879F006CBBEB /* GameConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameConstants.swift; sourceTree = "<group>"; };
 		8D8ACF16202F8CDB006CBBEB /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		8D8ACF19202F9556006CBBEB /* PhysicsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicsHelper.swift; sourceTree = "<group>"; };
+		8D8ACF2720309E36006CBBEB /* GroundNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroundNode.swift; sourceTree = "<group>"; };
 		8DBF955B2007DDC000DFAB14 /* Layer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -210,6 +212,7 @@
 		8D8ACF15202F8CC0006CBBEB /* CustomClasses */ = {
 			isa = PBXGroup;
 			children = (
+				8D8ACF2720309E36006CBBEB /* GroundNode.swift */,
 				8D8ACF16202F8CDB006CBBEB /* Player.swift */,
 			);
 			path = CustomClasses;
@@ -376,6 +379,7 @@
 				8D8ACF14202F879F006CBBEB /* GameConstants.swift in Sources */,
 				8D061B952002E3C7006DD713 /* AppDelegate.swift in Sources */,
 				8D8ACF12202F81D6006CBBEB /* RepeatingLayer.swift in Sources */,
+				8D8ACF2820309E36006CBBEB /* GroundNode.swift in Sources */,
 				8D8ACF1A202F9556006CBBEB /* PhysicsHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

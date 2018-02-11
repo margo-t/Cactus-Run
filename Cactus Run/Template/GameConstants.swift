@@ -10,6 +10,7 @@ import Foundation
 import CoreGraphics
 
 struct GameConstants {
+    
     struct ZPositions {
         static let farBGZ: CGFloat = 0
         static let closeBGZ: CGFloat = 1
@@ -20,9 +21,11 @@ struct GameConstants {
     }
     
     struct StringConstants {
-        static let groundTilesName = "Ground Tiles"
+        static let groundTilesName = "GroundTiles"
         static let worldBackgroundNames = ["DessertBackground", "GrassBackground"]
         static let playerName = "Player"
         static let playerImageName = "Idle_0"
+        static let groundNodeName = "GroundNode"
     }
+    
 }
