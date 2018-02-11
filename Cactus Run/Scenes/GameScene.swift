@@ -24,7 +24,13 @@ class GameScene: SKScene {
 
     var gameState = GameState.ready
     
+    var player: Player!
+    
     override func didMove(to view: SKView) {
+        
+        physicsWorld.contactDelegate = self
+        physicsWorld.gravity = CGVector(dx: 0.0, dy: -6.0)
+        
         createLayers()
     }
     
@@ -65,6 +71,17 @@ class GameScene: SKScene {
             tileMap = groundTiles
             tileMap.scale(to: frame.size, width: false, multiplier: 1.0)
         }
+        addPlayer()
+    }
+    
+    func addPlayer() {
+        player = Player(imageNamed: GameConstants.StringConstants.playerImageName)
+        player.scale(to: frame.size, width: false, multiplier: 0.2)
+        player.name = GameConstants.StringConstants.playerName
+        PhysicsHelper.addPhysicsBody(to: player, with: player.name!)
+        player.position = CGPoint(x: frame.midX/2.0, y: frame.midY)
+        player.zPosition = GameConstants.ZPositions.playerZ
+        addChild(player)
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -98,5 +115,9 @@ class GameScene: SKScene {
             
         }
     }
+    
+}
+
+extension GameScene: SKPhysicsContactDelegate {
     
 }

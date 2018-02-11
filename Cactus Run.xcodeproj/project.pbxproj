@@ -20,6 +20,8 @@
 		8D061BD420067025006DD713 /* SKNodeExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D061BD320067025006DD713 /* SKNodeExtentions.swift */; };
 		8D8ACF12202F81D6006CBBEB /* RepeatingLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8ACF11202F81D6006CBBEB /* RepeatingLayer.swift */; };
 		8D8ACF14202F879F006CBBEB /* GameConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8ACF13202F879F006CBBEB /* GameConstants.swift */; };
+		8D8ACF17202F8CDB006CBBEB /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8ACF16202F8CDB006CBBEB /* Player.swift */; };
+		8D8ACF1A202F9556006CBBEB /* PhysicsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8ACF19202F9556006CBBEB /* PhysicsHelper.swift */; };
 		8DBF955C2007DDC000DFAB14 /* Layer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBF955B2007DDC000DFAB14 /* Layer.swift */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +62,8 @@
 		8D061BD320067025006DD713 /* SKNodeExtentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SKNodeExtentions.swift; sourceTree = "<group>"; };
 		8D8ACF11202F81D6006CBBEB /* RepeatingLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepeatingLayer.swift; sourceTree = "<group>"; };
 		8D8ACF13202F879F006CBBEB /* GameConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameConstants.swift; sourceTree = "<group>"; };
+		8D8ACF16202F8CDB006CBBEB /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		8D8ACF19202F9556006CBBEB /* PhysicsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysicsHelper.swift; sourceTree = "<group>"; };
 		8DBF955B2007DDC000DFAB14 /* Layer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Layer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,6 +115,8 @@
 		8D061B932002E3C7006DD713 /* Cactus Run */ = {
 			isa = PBXGroup;
 			children = (
+				8D8ACF18202F953B006CBBEB /* Helpers */,
+				8D8ACF15202F8CC0006CBBEB /* CustomClasses */,
 				8DBF955A2007DDB100DFAB14 /* Layers */,
 				8D061BD220066FF8006DD713 /* Extentions */,
 				8D061BCF20065F99006DD713 /* Tiles */,
@@ -199,6 +205,22 @@
 				8D061BD320067025006DD713 /* SKNodeExtentions.swift */,
 			);
 			path = Extentions;
+			sourceTree = "<group>";
+		};
+		8D8ACF15202F8CC0006CBBEB /* CustomClasses */ = {
+			isa = PBXGroup;
+			children = (
+				8D8ACF16202F8CDB006CBBEB /* Player.swift */,
+			);
+			path = CustomClasses;
+			sourceTree = "<group>";
+		};
+		8D8ACF18202F953B006CBBEB /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				8D8ACF19202F9556006CBBEB /* PhysicsHelper.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		8DBF955A2007DDB100DFAB14 /* Layers */ = {
@@ -350,9 +372,11 @@
 				8D061B9D2002E3C7006DD713 /* GameViewController.swift in Sources */,
 				8DBF955C2007DDC000DFAB14 /* Layer.swift in Sources */,
 				8D061BD420067025006DD713 /* SKNodeExtentions.swift in Sources */,
+				8D8ACF17202F8CDB006CBBEB /* Player.swift in Sources */,
 				8D8ACF14202F879F006CBBEB /* GameConstants.swift in Sources */,
 				8D061B952002E3C7006DD713 /* AppDelegate.swift in Sources */,
 				8D8ACF12202F81D6006CBBEB /* RepeatingLayer.swift in Sources */,
+				8D8ACF1A202F9556006CBBEB /* PhysicsHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
